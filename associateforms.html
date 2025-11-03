@@ -99,7 +99,7 @@
   <main class="wrap">
     <!-- Quick Overview -->
     <section class="card">
-      <h2 style="margin-top:0">Overview - Adding Forms</h2>
+      <h2 style="margin-top:0">Overview - Associate to Documents</h2>
       <p>This guide walks through creating a new form in Solartis Builder—navigating to Forms, creating the form shell, mapping it to the proper Line of Business, selecting companies and jurisdictions, versioning, and saving.</p>
       <p class="note">Tip: Keep your form template ready to upload (<code>.docx</code> or platform-approved format), and confirm the correct <em>Data Structure</em> before saving.</p>
     </section>
@@ -111,71 +111,88 @@
       </section>
 
     <!-- Stepper -->
+
     <section class="card">
       <h2 style="margin-top:0">Step-by-Step</h2>
-      <div class="steps">
-        <div class="step">
+      <div class="steps" role="list">
+        <div class="step" role="listitem">
           <div class="dot">1</div>
           <div>
-            <h3>Open Forms</h3>
-            <p>In Solartis Builder, navigate to <em>Products → Forms</em>.</p>
-            <p><img src="newform1.png"</p>
+            <h3>Select <em>Documents</em> from the Sidebar</h3>
+            <p>Open the Documents area in Solartis Builder to work with policy output artifacts.</p>
+            <p><img src="associate1.png"</p>
           </div>
         </div>
 
-        <div class="step">
+        <div class="step" role="listitem">
           <div class="dot">2</div>
           <div>
-            <h3>Create New Form</h3>
-            <p>Select <strong>Create New Form</strong> to start a new form record.</p>
-            <p><img src="newform2.png"></p>
+            <h3>Navigate to the Intended Document</h3>
+            <p>For policy documents, choose <strong>Issuance</strong> and select either <strong>New Business</strong> or <strong>Renewal</strong> as appropriate.</p>
+            <p><img src="associate2.png" height="200" width="750"</p>
           </div>
         </div>
 
-        <div class="step">
+        <div class="step" role="listitem">
           <div class="dot">3</div>
           <div>
-            <h3>Enter Form Details & Upload Template</h3>
-            <p>Complete the required fields (see checklist below), choose the correct <em>Data Structure</em>, and upload the form template file.</p>
-            <p><img src="newform3.png" width="600" height="200"></p>
+            <h3>Open <em>Associate Forms</em></h3>
+            <p>Under the document’s <strong>Actions</strong> menu, click <strong>Associate Forms</strong>.</p>
+            <p><img src="associate3.png"</p>
           </div>
         </div>
 
-        <div class="step">
+        <div class="step" role="listitem">
           <div class="dot">4</div>
           <div>
-            <h3>Form-Level Mapping</h3>
-            <p>Map the form at the appropriate <strong>Line of Business</strong> (e.g., Commercial Auto) so it appears only where applicable.</p>
-            <p><img src="newform4.png" width="755" height="200"></p>
+            <h3>Search for the Form</h3>
+            <p>Use the search to locate the form by form number, name, or keywords.</p>
+            <p><img src="associate4.png" height="250" width="750"</p>
           </div>
         </div>
 
-        <div class="step">
+        <div class="step" role="listitem">
           <div class="dot">5</div>
           <div>
-            <h3>Select Companies & Jurisdictions</h3>
-            <p>Choose the issuing company(ies) and the applicable jurisdiction(s)/state(s).</p>
-            <p><img src="newform5.png" width="649" height="150"></p>
+            <h3>Select the Form</h3>
+            <p>Check the <strong>Select</strong> box next to the correct form to select it for association.</p>
+            <p><img src="associate5.png"></p>
           </div>
         </div>
 
-        <div class="step">
+        <div class="step" role="listitem">
           <div class="dot">6</div>
           <div>
-            <h3>Create Change Version</h3>
-            <p>Use <strong>Create New Change Version</strong> to establish version control for this form (effective dating, edits).</p>
-            <p><img src="newform6.png" width="500" height="450"></p>
+            <h3>Enter Print Order</h3>
+            <p>Provide the form’s display/print order relative to other forms on the document.</p>
+            <p><img src="associate6.png"></p>
           </div>
         </div>
 
-        <div class="step">
+        <div class="step" role="listitem">
           <div class="dot">7</div>
           <div>
-            <h3>Save Changes</h3>
-            <p>Save the form. Then proceed to <em>Associate New Forms</em> to include it in the product flow where needed.</p>
-            <p><img src="newform7.png" width="650" height="135"></p>
+            <h3>Set Applicable &amp; Effective Dates</h3>
+            <p>Update the <strong>Applicable Date</strong> (quote date) and <strong>Effective Date</strong> (policy date) as required for this association.</p>
+            <p><img src="associate7.png"></p>
           </div>
         </div>
+
+        <div class="step" role="listitem">
+          <div class="dot">8</div>
+          <div>
+            <h3>Re-Order Forms if Needed</h3>
+            <p>If other forms need to be re-sequenced after adding this one, adjust their print order. See the separate <a href="reorderforms.html"><b>Reorder Forms</a></b> guidance if applicable.</p>
+          </div>
+        </div>
+
+        <div class="step" role="listitem">
+          <div class="dot">9</div>
+          <div>
+            <h3>Tag the Change Version</h3>
+            <p>Tag these updates to the same <strong>Change Version</strong> as the form addition so they can be promoted together cleanly.</p>
+            <p><img src="associate8.png"></p>
+          </div>
       </div>
     </section>
 
@@ -183,39 +200,21 @@
        <section class="card">
         <h2 style="margin-top:0">Considerations</h2>
         <ol>
-          <li>Is the form Mandatory or Conditional?</li>
-          <li>Does the form need to be listed on the quote letter, binder, issuance document (Include in Schedule of Forms?)</li>
-          <li>As of what quote date should the form be applicable (Applicable Date)</li>
-          <li>As of what effective date should the form be applicable (Effective Date)</li>
-          <li>What Lines of Business, Jurisdictions, Carriers will the form apply to?</li>
+          <li>Have we associated the form with every required document type (New Business, Renewal Issuance, etc...?)</li>
+          <li>Was the form associated with the correct applicable and effective dates?</li>
+          <li>Was the form associated with all applicable carriers and lines of business?</li>
+          <li>Was the form associated with the appropriate order for all carriers (note: different carriers may require different order numbers)?</li>
+          <li>Is the existing form order affected (ie: if we add this form as #45 in the list, are there existing forms that need to be reordered)?</li>
+
       </section>
 
-    <!-- Required Fields Checklist -->
-    <section class="card">
-      <h2 style="margin-top:0">Form Details – Required Fields</h2>
-      <p class="note">Check these off as you complete them:</p>
-      <div class="fields" role="group" aria-label="Required fields">
-        <label class="check"><input type="checkbox" /> <span><strong>Form Number</strong></span></label>
-        <label class="check"><input type="checkbox" /> <span><strong>Edition</strong></span></label>
-        <label class="check"><input type="checkbox" /> <span><strong>Language</strong> <span class="pill">English</span></span></label>
-        <label class="check"><input type="checkbox" /> <span><strong>Form Name</strong></span></label>
-        <label class="check"><input type="checkbox" /> <span><strong>Form Type</strong> <span class="pill">Mandatory</span> or <span class="pill">Conditional</span></span></label>
-        <label class="check"><input type="checkbox" /> <span><strong>Include in Schedule of Forms</strong> (Yes/No)</span></label>
-        <label class="check"><input type="checkbox" /> <span><strong>Applicable Start Date</strong></span></label>
-        <label class="check"><input type="checkbox" /> <span><strong>Effective Date</strong></span></label>
-        <label class="check"><input type="checkbox" /> <span><strong>Data Structure</strong> (e.g., CWTI_Commercial Auto_V13_Shrink…)</span></label>
-        <label class="check"><input type="checkbox" /> <span><strong>Upload Template</strong> (approved format)</span></label>
-      </div>
-      <div class="hint" style="margin-top:12px">
-        <strong>Heads-up:</strong> Double-check that the selected <em>Data Structure</em> matches your product version. Mismatches cause missing fields and form merge issues.
-      </div>
-    </section>
+ 
 
     <!-- Next Steps -->
     <section class="card">
       <h2 style="margin-top:0">What’s Next?</h2>
       <ol>
-        <li>Associate the Forms to the New Business and Renewal Issuance Documents: <a href="associateforms.html"><strong>Associate to Documents</strong></a></p></li>
+        <li>Reorder existing forms (if appilcable): <a href="reorderforms.html"><strong>Reorder Existing Forms</strong></a></p></li>
       </ol>
     </section>
   </main>

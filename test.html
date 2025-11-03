@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Associate New Form to Document – Solartis Builder</title>
+  <style>
+    :root {
+      --bg: #f7f7fb;
+      --card: #ffffff;
+      --ink: #1f2937;
+      --muted: #6b7280;
+      --brand: #0ea5e9;
+      --border: #e5e7eb;
+      --warn: #f59e0b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+    }
+    header {
+      background: linear-gradient(180deg, #e0f2fe, #eff6ff);
+      border-bottom: 1px solid var(--border);
+      padding: 24px 16px;
+    }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 0 16px; }
+    h1 { margin: 0 0 6px; font-size: 28px; }
+    .sub { color: var(--muted); margin: 0; }
+    nav ul { list-style: none; padding: 0; margin: 12px 0 0; display: flex; gap: 14px; flex-wrap: wrap; }
+    nav a { color: #0369a1; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+
+    .card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+      padding: 20px; margin: 20px 0;
+      box-shadow: 0 1px 2px rgba(0,0,0,.04);
+    }
+
+    /* Stepper */
+    .steps { display: grid; gap: 16px; counter-reset: step; }
+    .step {
+      display: grid; grid-template-columns: 40px 1fr; gap: 12px; align-items: start;
+      padding: 14px; border: 1px solid var(--border); border-radius: 12px; background: #fff;
+    }
+    .dot {
+      width: 28px; height: 28px; border-radius: 50%;
+      display: grid; place-items: center; font-weight: 700; color: #fff; background: var(--brand);
+    }
+    .step h3 { margin: 0 0 6px; font-size: 18px; }
+    .step p { margin: 0; color: var(--muted); }
+
+    .note { font-size: 14px; color: var(--muted); }
+    .hint { background: #fffbeb; border: 1px solid #fde68a; color: #92400e; padding: 10px 12px; border-radius: 10px; }
+
+    .keyline { border-left: 4px solid var(--brand); padding-left: 12px; }
+
+    footer { padding: 20px 0 40px; color: var(--muted); font-size: 13px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Associate New Form to Document</h1>
+      <p class="sub">Solartis Builder – Associate a form to an issuance document (New Business &amp; Renewal)</p>
+
+      <nav class="top-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="accesslinks.html">Builder Access</a></li>
+          <li><a href="ratesconfig.html">Rates</a></li>
+          <li><a href="rulesconfig.html">Rules</a></li>
+          <li><a href="formsconfig.html">Forms</a></li>
+          <li><a href="documentsconfig.html">Documents</a></li>
+          <li><a href="addingforms.html">Add New Form</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2 style="margin-top:0">Overview</h2>
+      <p class="keyline">Use this guide to associate an existing form with a product document (typically the <em>Issuance</em> documents for New Business and Renewal). You’ll search for the form, select it, define print order and dating, then tag the change version for promotion.</p>
+      <p class="note">Tip: Have your target document open (e.g., <strong>Issuance – New Business</strong> or <strong>Issuance – Renewal</strong>) before you start.</p>
+    </section>
+
+    <section class="card">
+      <h2 style="margin-top:0">Step-by-Step</h2>
+      <div class="steps" role="list">
+        <div class="step" role="listitem">
+          <div class="dot">1</div>
+          <div>
+            <h3>Select <em>Documents</em> from the Sidebar</h3>
+            <p>Open the Documents area in Solartis Builder to work with policy output artifacts.</p>
+          </div>
+        </div>
+
+        <div class="step" role="listitem">
+          <div class="dot">2</div>
+          <div>
+            <h3>Navigate to the Intended Document</h3>
+            <p>For policy documents, choose <strong>Issuance</strong> and select either <strong>New Business</strong> or <strong>Renewal</strong> as appropriate.</p>
+          </div>
+        </div>
+
+        <div class="step" role="listitem">
+          <div class="dot">3</div>
+          <div>
+            <h3>Open <em>Associate Forms</em></h3>
+            <p>Under the document’s <strong>Actions</strong> menu, click <strong>Associate Forms</strong>.</p>
+          </div>
+        </div>
+
+        <div class="step" role="listitem">
+          <div class="dot">4</div>
+          <div>
+            <h3>Search for the Form</h3>
+            <p>Use the search to locate the form by form number, name, or keywords.</p>
+          </div>
+        </div>
+
+        <div class="step" role="listitem">
+          <div class="dot">5</div>
+          <div>
+            <h3>Select the Form</h3>
+            <p>Check the <strong>Select</strong> box next to the correct form to stage it for association.</p>
+          </div>
+        </div>
+
+        <div class="step" role="listitem">
+          <div class="dot">6</div>
+          <div>
+            <h3>Enter Print Order</h3>
+            <p>Provide the form’s display/print order relative to other forms on the document.</p>
+          </div>
+        </div>
+
+        <div class="step" role="listitem">
+          <div class="dot">7</div>
+          <div>
+            <h3>Set Applicable &amp; Effective Dates</h3>
+            <p>Update the <strong>Applicable Date</strong> (quote date) and <strong>Effective Date</strong> (policy date) as required for this association.</p>
+          </div>
+        </div>
+
+        <div class="step" role="listitem">
+          <div class="dot">8</div>
+          <div>
+            <h3>Re-Order Forms if Needed</h3>
+            <p>If other forms need to be re-sequenced after adding this one, adjust their print order. See the separate “Reorder Forms” guidance if available.</p>
+          </div>
+        </div>
+
+        <div class="step" role="listitem">
+          <div class="dot">9</div>
+          <div>
+            <h3>Tag the Change Version</h3>
+            <p>Tag these updates to the same <strong>Change Version</strong> as the form add so they can be promoted together cleanly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 style="margin-top:0">Notes &amp; Tips</h2>
+      <ul>
+        <li>If the form doesn’t appear in search, confirm it’s created and mapped correctly under <em>Products → Forms</em> (see <a href="addingforms.html">Add New Form</a>).</li>
+        <li>Keep print order ranges consistent (e.g., 10, 20, 30…) to make later inserts easier.</li>
+        <li>When associating multiple forms, date and tag them in the same change version for a single promotion.</li>
+      </ul>
+      <div class="hint"><strong>Heads-up:</strong> After association, test a sample policy through to Issuance to validate ordering and inclusion.</div>
+    </section>
+
+    <footer class="wrap">
+      <p>© Cover Whale – Core Systems</p>
+    </footer>
+  </main>
+</body>
+</html>

@@ -99,9 +99,9 @@
   <main class="wrap">
     <!-- Quick Overview -->
     <section class="card">
-      <h2 style="margin-top:0">Overview - Adding Forms</h2>
+      <h2 style="margin-top:0">Overview - Reorder Existing Forms</h2>
       <p>This guide walks through creating a new form in Solartis Builder—navigating to Forms, creating the form shell, mapping it to the proper Line of Business, selecting companies and jurisdictions, versioning, and saving.</p>
-      <p class="note">Tip: Keep your form template ready to upload (<code>.docx</code> or platform-approved format), and confirm the correct <em>Data Structure</em> before saving.</p>
+      <p class="note">Tip: Keep your form template ready to upload (<code>.docx</code> or platform-approved format), and confirm the correct <b>Data Structure</b> before saving.</p>
     </section>
 
       <!-- Quick Overview -->
@@ -111,111 +111,85 @@
       </section>
 
     <!-- Stepper -->
+
     <section class="card">
       <h2 style="margin-top:0">Step-by-Step</h2>
-      <div class="steps">
-        <div class="step">
+      <div class="steps" role="list">
+        <div class="step" role="listitem">
           <div class="dot">1</div>
           <div>
-            <h3>Open Forms</h3>
-            <p>In Solartis Builder, navigate to <em>Products → Forms</em>.</p>
-            <p><img src="newform1.png"</p>
+            <h3>In the <b>Documents</b> section, select <b>Reorder</b> Forms from the <b>Actions</b> menu</h3>
+            <p><img src="reorder1.png"</p>
           </div>
         </div>
 
-        <div class="step">
+        <div class="step" role="listitem">
           <div class="dot">2</div>
           <div>
-            <h3>Create New Form</h3>
-            <p>Select <strong>Create New Form</strong> to start a new form record.</p>
-            <p><img src="newform2.png"></p>
+            <h3>Filter the list of available forms by <b>Company</b> and <b>Sub-Line</b></h3>
+            <p>If only a few forms need adjustment, you can also filter by <b>Form Number</b> or <b>Form Name</b>.</p>
+            <p><img src="reorder2.png"</p>
           </div>
         </div>
 
-        <div class="step">
-          <div class="dot">3</div>
-          <div>
-            <h3>Enter Form Details & Upload Template</h3>
-            <p>Complete the required fields (see checklist below), choose the correct <em>Data Structure</em>, and upload the form template file.</p>
-            <p><img src="newform3.png" width="600" height="200"></p>
-          </div>
-        </div>
+        
+            <div class="step" role="listitem">
+                <div class="dot">3</div>
+                <div>
+                    <h3>Select the Form</h3>
+                    <p>Check the <strong>Select</strong> box next to the correct form to select it for reordering.</p>
+                    <p><img src="associate5.png"></p>
+                </div>
+              </div>
+      
 
-        <div class="step">
-          <div class="dot">4</div>
-          <div>
-            <h3>Form-Level Mapping</h3>
-            <p>Map the form at the appropriate <strong>Line of Business</strong> (e.g., Commercial Auto) so it appears only where applicable.</p>
-            <p><img src="newform4.png" width="755" height="200"></p>
+        <div class="step" role="listitem">
+            <div class="dot">4</div>
+            <div>
+              <h3>Update the <b>Print Order</b> values for each form</h3>
+              <p><b>Note:</b> The Builder interface can be sensitive when editing print order values. Confirm each change has saved before moving on.</p>
+              <p><img src="reorder3.png"</p>
+            </div>
           </div>
-        </div>
 
-        <div class="step">
+        <div class="step" role="listitem">
           <div class="dot">5</div>
           <div>
-            <h3>Select Companies & Jurisdictions</h3>
-            <p>Choose the issuing company(ies) and the applicable jurisdiction(s)/state(s).</p>
-            <p><img src="newform5.png" width="649" height="150"></p>
+            <h3>Select the same <b>Change Version</b> used when adding/associating the new form, or create a new Change Version if required</h3>
+            <p><b>Note:</b> Tagging changes to the wrong version can cause deployment issues.</p>
+            <p><img src="reorder5.png"></p>
           </div>
         </div>
 
-        <div class="step">
+        <div class="step" role="listitem">
           <div class="dot">6</div>
           <div>
-            <h3>Create Change Version</h3>
-            <p>Use <strong>Create New Change Version</strong> to establish version control for this form (effective dating, edits).</p>
-            <p><img src="newform6.png" width="500" height="450"></p>
+            <h3>Click <b>Reorder Forms</b> to apply the updates</h3>
+            <p><img src="reorder6.png"></p>
           </div>
         </div>
 
-        <div class="step">
-          <div class="dot">7</div>
-          <div>
-            <h3>Save Changes</h3>
-            <p>Save the form. Then proceed to <em>Associate New Forms</em> to include it in the product flow where needed.</p>
-            <p><img src="newform7.png" width="650" height="135"></p>
-          </div>
-        </div>
-      </div>
+
     </section>
 
        <!-- Consider This -->
        <section class="card">
         <h2 style="margin-top:0">Considerations</h2>
         <ol>
-          <li>Is the form Mandatory or Conditional?</li>
-          <li>Does the form need to be listed on the quote letter, binder, issuance document (Include in Schedule of Forms?)</li>
-          <li>As of what quote date should the form be applicable (Applicable Date)</li>
-          <li>As of what effective date should the form be applicable (Effective Date)</li>
-          <li>What Lines of Business, Jurisdictions, Carriers will the form apply to?</li>
+          <li>Are we sure that we haven't duplicated any print order numbering?</li>
+          <li>Have we updated form ordering for all applicable carriers?</li>
+          <li>Have we tagged the appropriate change version?</li>
+          <li>If making updates to an existing form, are we sure we are not including both versions?</li>
+
       </section>
 
-    <!-- Required Fields Checklist -->
-    <section class="card">
-      <h2 style="margin-top:0">Form Details – Required Fields</h2>
-      <p class="note">Check these off as you complete them:</p>
-      <div class="fields" role="group" aria-label="Required fields">
-        <label class="check"><input type="checkbox" /> <span><strong>Form Number</strong></span></label>
-        <label class="check"><input type="checkbox" /> <span><strong>Edition</strong></span></label>
-        <label class="check"><input type="checkbox" /> <span><strong>Language</strong> <span class="pill">English</span></span></label>
-        <label class="check"><input type="checkbox" /> <span><strong>Form Name</strong></span></label>
-        <label class="check"><input type="checkbox" /> <span><strong>Form Type</strong> <span class="pill">Mandatory</span> or <span class="pill">Conditional</span></span></label>
-        <label class="check"><input type="checkbox" /> <span><strong>Include in Schedule of Forms</strong> (Yes/No)</span></label>
-        <label class="check"><input type="checkbox" /> <span><strong>Applicable Start Date</strong></span></label>
-        <label class="check"><input type="checkbox" /> <span><strong>Effective Date</strong></span></label>
-        <label class="check"><input type="checkbox" /> <span><strong>Data Structure</strong> (e.g., CWTI_Commercial Auto_V13_Shrink…)</span></label>
-        <label class="check"><input type="checkbox" /> <span><strong>Upload Template</strong> (approved format)</span></label>
-      </div>
-      <div class="hint" style="margin-top:12px">
-        <strong>Heads-up:</strong> Double-check that the selected <em>Data Structure</em> matches your product version. Mismatches cause missing fields and form merge issues.
-      </div>
-    </section>
+ 
 
     <!-- Next Steps -->
     <section class="card">
       <h2 style="margin-top:0">What’s Next?</h2>
       <ol>
-        <li>Associate the Forms to the New Business and Renewal Issuance Documents: <a href="associateforms.html"><strong>Associate to Documents</strong></a></p></li>
+        <li>Test Form Attachment and Generation: <a href="formstesting.html"><strong>Forms Testing</strong></a></p></li>
       </ol>
     </section>
   </main>
