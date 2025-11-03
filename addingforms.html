@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Solartis Builder – Add New Static/Mandatory Form</title>
+  <style>
+    :root {
+      --bg: #f7f7fb;
+      --card: #ffffff;
+      --ink: #1f2937;
+      --muted: #6b7280;
+      --brand: #0ea5e9;
+      --ok: #10b981;
+      --border: #e5e7eb;
+      --warn: #f59e0b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font: 16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink); background: var(--bg);
+    }
+    header {
+      background: linear-gradient(180deg, #e0f2fe, #eff6ff);
+      border-bottom: 1px solid var(--border);
+      padding: 24px 16px;
+    }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 0 16px; }
+    h1 { margin: 0 0 6px; font-size: 28px; }
+    .sub { color: var(--muted); margin: 0; }
+    .card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+      padding: 20px; margin: 20px 0;
+      box-shadow: 0 1px 2px rgba(0,0,0,.04);
+    }
+    /* Stepper */
+    .steps { display: grid; gap: 16px; counter-reset: step; }
+    .step {
+      display: grid; grid-template-columns: 40px 1fr; gap: 12px; align-items: start;
+      padding: 14px; border: 1px solid var(--border); border-radius: 12px; background: #fff;
+    }
+    .dot {
+      width: 28px; height: 28px; border-radius: 50%;
+      display: grid; place-items: center; font-weight: 700; color: #fff; background: var(--brand);
+    }
+    .step h3 { margin: 0 0 6px; font-size: 18px; }
+    .step p { margin: 0; color: var(--muted); }
+    /* Checklist */
+    .fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px 14px; }
+    .check {
+      display: flex; align-items: center; gap: 10px;
+      padding: 10px 12px; border: 1px dashed var(--border); border-radius: 10px;
+      background: #fafafa;
+    }
+    .check input { width: 18px; height: 18px; }
+    .pill {
+      display: inline-block; padding: 2px 8px; border-radius: 999px;
+      background: #ecfeff; color: #0369a1; font-size: 12px; border: 1px solid #bae6fd;
+    }
+    .note { font-size: 14px; color: var(--muted); }
+    .hint { background: #fffbeb; border: 1px solid #fde68a; color: #92400e; padding: 10px 12px; border-radius: 10px; }
+    .footer { font-size: 13px; color: var(--muted); }
+    a { color: #0369a1; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code { background: #f3f4f6; padding: 2px 6px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+ 
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Cover Whale - Core Systems</title>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+    
+    <body>
+    
+        <header>
+            <h1>Cover Whale – Core Systems</h1>
+            
+            <nav class="top-nav">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="accesslinks.html">Builder Access</a></li>
+                <li><a href="ratesconfig.html">Rates</a></li>
+                <li><a href="rulesconfig.html">Rules</a></li>
+                <li><a href="formsconfig.html">Forms</a></li>
+                <li><a href="documentsconfig.html">Documents</a></li>
+              </ul>
+            </nav>
+          </header>
+          
+        
+    </div>
+
+  <main class="wrap">
+    <!-- Quick Overview -->
+    <section class="card">
+      <h2 style="margin-top:0">Overview</h2>
+      <p>This guide walks through creating a new <strong>Static/Mandatory</strong> form in Solartis Builder—navigating to Forms, creating the form shell, mapping it to the proper Line of Business, selecting companies and jurisdictions, versioning, and saving.</p>
+      <p class="note">Tip: Keep your form template ready to upload (<code>.docx</code> or platform-approved format), and confirm the correct <em>Data Structure</em> before saving.</p>
+    </section>
+
+    <!-- Stepper -->
+    <section class="card">
+      <h2 style="margin-top:0">Step-by-Step</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="dot">1</div>
+          <div>
+            <h3>Open Forms</h3>
+            <p>In Solartis Builder, navigate to <em>Products → Forms</em>.</p>
+            <p><img src="newform1.png"</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="dot">2</div>
+          <div>
+            <h3>Create New Form</h3>
+            <p>Select <strong>Create New Form</strong> to start a new form record.</p>
+            <p><img src="newform2.png"></p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="dot">3</div>
+          <div>
+            <h3>Enter Form Details & Upload Template</h3>
+            <p>Complete the required fields (see checklist below), choose the correct <em>Data Structure</em>, and upload the form template file.</p>
+            <p><img src="newform3.png" width="600" height="200"></p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="dot">4</div>
+          <div>
+            <h3>Form-Level Mapping</h3>
+            <p>Map the form at the appropriate <strong>Line of Business</strong> (e.g., Commercial Auto) so it appears only where applicable.</p>
+            <p><img src="newform4.png" width="755" height="200"></p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="dot">5</div>
+          <div>
+            <h3>Select Companies & Jurisdictions</h3>
+            <p>Choose the issuing company(ies) and the applicable jurisdiction(s)/state(s).</p>
+            <p><img src="newform5.png" width="649" height="150"></p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="dot">6</div>
+          <div>
+            <h3>Create Change Version</h3>
+            <p>Use <strong>Create New Change Version</strong> to establish version control for this form (effective dating, edits).</p>
+            <p><img src="newform6.png" width="500" height="450"></p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="dot">7</div>
+          <div>
+            <h3>Save Changes</h3>
+            <p>Save the form. Then proceed to <em>Associate New Forms</em> to include it in the product flow where needed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Required Fields Checklist -->
+    <section class="card">
+      <h2 style="margin-top:0">Form Details – Required Fields</h2>
+      <p class="note">Check these off as you complete them:</p>
+      <div class="fields" role="group" aria-label="Required fields">
+        <label class="check"><input type="checkbox" /> <span><strong>Form Number</strong></span></label>
+        <label class="check"><input type="checkbox" /> <span><strong>Edition</strong></span></label>
+        <label class="check"><input type="checkbox" /> <span><strong>Language</strong> <span class="pill">English</span></span></label>
+        <label class="check"><input type="checkbox" /> <span><strong>Form Name</strong></span></label>
+        <label class="check"><input type="checkbox" /> <span><strong>Form Type</strong> <span class="pill">Mandatory</span> or <span class="pill">Conditional</span></span></label>
+        <label class="check"><input type="checkbox" /> <span><strong>Include in Schedule of Forms</strong> (Yes/No)</span></label>
+        <label class="check"><input type="checkbox" /> <span><strong>Applicable Start Date</strong></span></label>
+        <label class="check"><input type="checkbox" /> <span><strong>Effective Date</strong></span></label>
+        <label class="check"><input type="checkbox" /> <span><strong>Data Structure</strong> (e.g., CWTI_Commercial Auto_V13_Shrink…)</span></label>
+        <label class="check"><input type="checkbox" /> <span><strong>Upload Template</strong> (approved format)</span></label>
+      </div>
+      <div class="hint" style="margin-top:12px">
+        <strong>Heads-up:</strong> Double-check that the selected <em>Data Structure</em> matches your product version. Mismatches cause missing fields and form merge issues.
+      </div>
+    </section>
+
+    <!-- Next Steps -->
+    <section class="card">
+      <h2 style="margin-top:0">What’s Next?</h2>
+      <ol>
+        <li>Confirm the form displays for the correct LOB, company, and jurisdiction in a test quote/bind flow.</li>
+        <li>Follow the companion guide: <em>Associate New Forms</em> (add to issuance, endorsements, and schedule as required).</li>
+      </ol>
+      <p class="footer">Source: internal “Add New Static Mandatory Form” job aid. :contentReference[oaicite:0]{index=0}</p>
+    </section>
+  </main>
+</body>
+</html>
