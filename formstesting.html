@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Solartis Builder – Forms Testing</title>
+  <style>
+    :root {
+      --bg: #f7f7fb;
+      --card: #ffffff;
+      --ink: #1f2937;
+      --muted: #6b7280;
+      --brand: #0ea5e9;
+      --ok: #10b981;
+      --border: #e5e7eb;
+      --warn: #f59e0b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font: 16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink); background: var(--bg);
+    }
+    header {
+      background: linear-gradient(180deg, #e0f2fe, #eff6ff);
+      border-bottom: 1px solid var(--border);
+      padding: 24px 16px;
+    }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 0 16px; }
+    h1 { margin: 0 0 6px; font-size: 28px; }
+    .sub { color: var(--muted); margin: 0; }
+    .card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+      padding: 20px; margin: 20px 0;
+      box-shadow: 0 1px 2px rgba(0,0,0,.04);
+    }
+    /* Stepper */
+    .steps { display: grid; gap: 16px; counter-reset: step; }
+    .step {
+      display: grid; grid-template-columns: 40px 1fr; gap: 12px; align-items: start;
+      padding: 14px; border: 1px solid var(--border); border-radius: 12px; background: #fff;
+    }
+    .dot {
+      width: 28px; height: 28px; border-radius: 50%;
+      display: grid; place-items: center; font-weight: 700; color: #fff; background: var(--brand);
+    }
+    .step h3 { margin: 0 0 6px; font-size: 18px; }
+    .step p { margin: 0; color: var(--muted); }
+    /* Checklist */
+    .fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px 14px; }
+    .check {
+      display: flex; align-items: center; gap: 10px;
+      padding: 10px 12px; border: 1px dashed var(--border); border-radius: 10px;
+      background: #fafafa;
+    }
+    .check input { width: 18px; height: 18px; }
+    .pill {
+      display: inline-block; padding: 2px 8px; border-radius: 999px;
+      background: #ecfeff; color: #0369a1; font-size: 12px; border: 1px solid #bae6fd;
+    }
+    .note { font-size: 14px; color: var(--muted); }
+    .hint { background: #fffbeb; border: 1px solid #fde68a; color: #92400e; padding: 10px 12px; border-radius: 10px; }
+    .footer { font-size: 13px; color: var(--muted); }
+    a { color: #0369a1; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code { background: #f3f4f6; padding: 2px 6px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+ 
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Cover Whale - Core Systems</title>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+    
+    <body>
+    
+        <header>
+            <h1>Cover Whale – Core Systems</h1>
+            
+            <nav class="top-nav">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="accesslinks.html">Builder Access</a></li>
+                <li><a href="ratesconfig.html">Rates</a></li>
+                <li><a href="rulesconfig.html">Rules</a></li>
+                <li><a href="formsconfig.html">Forms</a></li>
+                <li><a href="documentsconfig.html">Documents</a></li>
+              </ul>
+            </nav>
+          </header>
+          
+        
+    </div>
+
+  <main class="wrap">
+    <!-- Quick Overview -->
+    <section class="card">
+      <h2 style="margin-top:0">Overview - Forms Testing</h2>
+      <p> Use this process to test form attachment and generation. This stepy by step tutorial is intended for testing within the UI Portal (Dev/Test/Staging environments).  Those with knowledge of Postman will be able to test via that tool as well.</p>
+        
+    <p><b>Note:</b> The video will include a full walk through of creating a submission in the UI, but the screnshot walk through will start after the quote has been generated.</p>
+    </section>
+
+      <!-- Quick Overview -->
+      <section class="card">
+        <h2 style="margin-top:0">Video Tutorial</h2>
+        <p><iframe src="https://drive.google.com/file/d/1iHGxTF3M28UPUK8OLSVkrEZlnRGx0v9u/preview" width="800" height="400" allow="autoplay"></iframe></p>
+      </section>
+
+    <!-- Stepper -->
+
+    <section class="card">
+      <h2 style="margin-top:0">Step-by-Step</h2>
+      <div class="steps" role="list">
+        <div class="step" role="listitem">
+          <div class="dot">1</div>
+          <div>
+            <h3>Quote a Submission via the Portal (dev environment for initial testing)</h3>
+            <p>Ensure that the appropriate <b>Carrier</b> and <b>State</b> are selected.  For <b>Conditional Forms</b>, ensure that required conditions are met.</p>
+            <p><img src="formtest1.png"</p>
+          </div>
+        </div>
+
+        <div class="step" role="listitem">
+          <div class="dot">2</div>
+          <div>
+            <h3>Navigate to the <b>Quote Documents</b> section and download the <b>Quote Proposal</b></h3>
+            <p><img src="formtest2.png"</p>
+          </div>
+        </div>
+
+        
+            <div class="step" role="listitem">
+                <div class="dot">3</div>
+                <div>
+                    <h3>Navigate to the <b>Forms List</b> within the <b>Quote Document</b>.</h3>
+                    <p>Confirm that the appropriate form <b>Number</b> and <b>Name</b> are present in the forms list.</p>
+                    <p><img src="formtest3.png"></p>
+                </div>
+              </div>
+      
+
+        <div class="step" role="listitem">
+            <div class="dot">4</div>
+            <div>
+              <h3><b>Bind</b> the submission</h3>
+              <p><img src="formtest4.png"</p>
+            </div>
+          </div>
+
+        <div class="step" role="listitem">
+          <div class="dot">5</div>
+          <div>
+            <h3>Navigate to the <b>Transaction</b>/<b>Documents</b> section and download the appropriate <b>Binder</b> document.</h3>
+            <p><img src="formtest5.png"></p>
+          </div>
+        </div>
+
+        <div class="step" role="listitem">
+          <div class="dot">6</div>
+          <div>
+            <h3>Navigate to the <b>Forms List</b> within the <b>Binder Document</b>.</h3>
+            <p>Confirm that the appropriate form <b>Number</b> and <b>Name</b> are present in the forms list.</p>
+            <p><img src="formtest6.png"></p>
+          </div>
+        </div>
+
+        <div class="step" role="listitem">
+            <div class="dot">6</div>
+            <div>
+              <h3>Download the appropriate <b>Issuance Document</b> from the <b>Document</b> section.</h3>
+              <p>Verify form <b>Attachment</b>, if the form is <b>Dynamic</b>, ensure that <b>Mapped Fields</b> are displayed accurately.</p>
+              <p><img src="formtest8.png" width="600" height="400"></p>
+            </div>
+          </div>
+
+
+    </section>
+
+       <!-- Consider This -->
+       <section class="card">
+        <h2 style="margin-top:0">Considerations</h2>
+        <ol>
+          <li>Have we confirmed that form numbers and names are displaying everywhere expected?</li>
+          <li>Are forms attaching per conditions set?</li>
+          <li>Is the form displaying fully and accurately?</li>
+
+      </section>
+
+ 
+
+    <!-- Next Steps -->
+    <section class="card">
+      <h2 style="margin-top:0">What’s Next?</h2>
+      <ol>
+        <li>Promote the form through environments, to LIVE: <a href="formpromotion.html"><strong>Forms Promotion</strong></a></p></li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>
